@@ -1,0 +1,195 @@
+{
+  "revision_id": "8505d584316866607ac11e6856e221583b5e625cacaa3c38bec2c372cb7ec974",
+  "name": "web",
+  "run_list": [
+    "recipe[chef-client::default]",
+    "recipe[vandelay-httpd::default]"
+  ],
+  "cookbook_locks": {
+    "chef-client": {
+      "version": "4.3.3",
+      "identifier": "969523b9a3a284813c827371cbd28296d077ab6f",
+      "dotted_decimal_identifier": "42385227177501316.36376802975927250.143584254208879",
+      "cache_key": "chef-client-4.3.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.3.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.3.3/download",
+        "version": "4.3.3"
+      }
+    },
+    "vandelay-httpd": {
+      "version": "0.0.0",
+      "identifier": "9bc215268e98c2a707c1c4769b62a2d92354d453",
+      "dotted_decimal_identifier": "43842017487132866.47014849916869474.179053484364883",
+      "source": "../cookbooks/vandelay-httpd",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:poise/yolover-example.git",
+        "revision": "541ad8b8a7b03ceae9a1e219ab7e0f0f2e29c79e",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/vandelay-httpd"
+      }
+    },
+    "httpd": {
+      "version": "0.3.4",
+      "identifier": "a87124598380be4e1cba5ed5eb407156f80d15d9",
+      "dotted_decimal_identifier": "47412197021941950.21986634964003648.124618342733273",
+      "cache_key": "httpd-0.3.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/httpd/versions/0.3.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/httpd/versions/0.3.4/download",
+        "version": "0.3.4"
+      }
+    },
+    "compat_resource": {
+      "version": "12.7.3",
+      "identifier": "c23f509abbc40b6f466e8a23d6b0b23d21e2176d",
+      "dotted_decimal_identifier": "54675760907797515.31321162992834224.195975631214445",
+      "cache_key": "compat_resource-12.7.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.7.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.7.3/download",
+        "version": "12.7.3"
+      }
+    },
+    "cron": {
+      "version": "1.7.4",
+      "identifier": "d8f52533be93490ea2449abbd32e5939d4827764",
+      "dotted_decimal_identifier": "61068135100224329.4119065211425582.98104913327972",
+      "cache_key": "cron-1.7.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.4/download",
+        "version": "1.7.4"
+      }
+    },
+    "logrotate": {
+      "version": "1.9.2",
+      "identifier": "f5a688be24dde794714133d5810a5fc23d4b02a9",
+      "dotted_decimal_identifier": "69144475529960935.41782821409620234.105287856620201",
+      "cache_key": "logrotate-1.9.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/1.9.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/1.9.2/download",
+        "version": "1.9.2"
+      }
+    },
+    "windows": {
+      "version": "1.39.1",
+      "identifier": "0e98019b84499c168f6990c485c03a3dde825ec4",
+      "dotted_decimal_identifier": "4107782345476508.6350133050770880.64037400501956",
+      "cache_key": "windows-1.39.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
+        "version": "1.39.1"
+      }
+    },
+    "chef_handler": {
+      "version": "1.3.0",
+      "identifier": "e43505a45df303a94934a1d3eb4cf0709d172554",
+      "dotted_decimal_identifier": "64234593038758659.47649761466248012.264366462543188",
+      "cache_key": "chef_handler-1.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.3.0/download",
+        "version": "1.3.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "chef-client",
+        "= 4.3.3"
+      ],
+      [
+        "vandelay-httpd",
+        "= 0.0.0"
+      ],
+      [
+        "httpd",
+        "= 0.3.4"
+      ],
+      [
+        "compat_resource",
+        "= 12.7.3"
+      ],
+      [
+        "cron",
+        "= 1.7.4"
+      ],
+      [
+        "logrotate",
+        "= 1.9.2"
+      ],
+      [
+        "windows",
+        "= 1.39.1"
+      ],
+      [
+        "chef_handler",
+        "= 1.3.0"
+      ]
+    ],
+    "dependencies": {
+      "chef-client (4.3.3)": [
+        [
+          "cron",
+          ">= 1.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.2.0"
+        ],
+        [
+          "windows",
+          ">= 1.39.0"
+        ]
+      ],
+      "vandelay-httpd (0.0.0)": [
+        [
+          "httpd",
+          ">= 0.0.0"
+        ]
+      ],
+      "httpd (0.3.4)": [
+        [
+          "compat_resource",
+          ">= 12.5.11"
+        ]
+      ],
+      "compat_resource (12.7.3)": [
+
+      ],
+      "cron (1.7.4)": [
+
+      ],
+      "logrotate (1.9.2)": [
+
+      ],
+      "windows (1.39.1)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef_handler (1.3.0)": [
+
+      ]
+    }
+  }
+}

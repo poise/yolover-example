@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+  ServerName localhost
+  DocumentRoot /srv/vandelay
+
+  <Directory /srv/vandelay>
+    Options Indexes
+    Require all granted
+  </Directory>
+
+  LogLevel warn
+  ErrorLog /var/log/httpd-default/error.log
+  CustomLog /var/log/httpd-default/access.log combined
+</VirtualHost>

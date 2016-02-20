@@ -14,11 +14,24 @@
 # limitations under the License.
 #
 
-# Policy name.
-name 'db'
+httpd_service 'default' do
+  action [:create, :start]
+end
 
-# Pull in base policy.
-instance_eval(IO.read(File.expand_path('../_base.rb', __FILE__)))
+directory '/srv/vandelay' do
+  group 'apache'
+  mode '750'
+  owner 'root'
+end
 
-# Recipes for this policy.
-run_list << 'vandelay-postgres'
+template '/srv/vandelay/index.html' do
+  group 'apache'
+  mode '640'
+  owner 'root'
+  source 'index.html.erb'
+end
+
+httpd_config 'default' do
+  notifies :restart, 'httpd_service[default]'
+  source 'site.conf.erb'
+end
