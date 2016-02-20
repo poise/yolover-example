@@ -5,11 +5,12 @@ language: generic
 install:
 - sudo add-apt-repository multiverse -y
 - sudo apt-get update -qq
-- sudo apt-get install -q virtualbox virtualbox-dkms linux-headers-generic --fix-missing
+- sudo apt-get install -q linux-headers-generic linux-headers-$(uname -r) virtualbox-dkms virtualbox --fix-missing
 - curl -o vagrant_1.8.1_x86_64.deb https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
 - sudo dpkg -i vagrant_1.8.1_x86_64.deb
 - curl https://www.opscode.com/chef/install.sh | sudo bash -s -- -P chefdk
 
 script:
 - VBoxManage --version
+- vagrant --version
 - kitchen test -d always
