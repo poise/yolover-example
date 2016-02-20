@@ -13,4 +13,4 @@ install:
 script:
 - VBoxManage --version
 - vagrant --version
-- kitchen test -d always
+- VAGRANT_LOG=debug kitchen test -d always
