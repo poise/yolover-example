@@ -10,5 +10,5 @@ install:
 - sudo dpkg -i vagrant_1.8.1_x86_64.deb
 - curl https://www.opscode.com/chef/install.sh | sudo bash -s -- -P chefdk
 
-test:
+script:
 - kitchen test -d always
