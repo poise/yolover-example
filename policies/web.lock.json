@@ -26,8 +26,8 @@
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:poise/yolover-example.git",
-        "revision": "9f861d2751f56483394ddeb6e86f87f844fc4cb6",
-        "working_tree_clean": false,
+        "revision": "c43412e5bd4a361319c7b10113fcfa0cf88d8055",
+        "working_tree_clean": true,
         "published": true,
         "synchronized_remote_branches": [
           "origin/master"
