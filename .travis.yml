@@ -11,4 +11,5 @@ install:
 - curl https://www.opscode.com/chef/install.sh | sudo bash -s -- -P chefdk
 
 script:
+- VBoxManage --version
 - kitchen test -d always
