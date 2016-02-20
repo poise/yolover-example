@@ -1,6 +1,6 @@
 # YoloVer Example Repository
 
-This (mono-)repo serves as an example for working with the [YoloVer workflow](https://yolover.poise.io).
+This (mono-)repository serves as an example for working with the [YoloVer workflow](https://yolover.poise.io).
 
 This Chef repository will deploy Apache and PostgreSQL for a hypothetical
 [Vandelay Industries](http://seinfeld.wikia.com/wiki/Vandelay_Industries).

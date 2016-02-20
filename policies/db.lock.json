@@ -1,9 +1,9 @@
 {
-  "revision_id": "8505d584316866607ac11e6856e221583b5e625cacaa3c38bec2c372cb7ec974",
-  "name": "web",
+  "revision_id": "b2eacfdb7edcce4c6391890324858546e7bcccc565c3aa5ba984913f5809cb6e",
+  "name": "db",
   "run_list": [
     "recipe[chef-client::default]",
-    "recipe[vandelay-httpd::default]"
+    "recipe[vandelay-postgres::default]"
   ],
   "cookbook_locks": {
     "chef-client": {
@@ -17,11 +17,11 @@
         "version": "4.3.3"
       }
     },
-    "vandelay-httpd": {
+    "vandelay-postgres": {
       "version": "0.0.0",
-      "identifier": "9bc215268e98c2a707c1c4769b62a2d92354d453",
-      "dotted_decimal_identifier": "43842017487132866.47014849916869474.179053484364883",
-      "source": "../cookbooks/vandelay-httpd",
+      "identifier": "909a9bf29af02c522f534aeb16c2806f260e9455",
+      "dotted_decimal_identifier": "40702391227183148.23132982875985602.141214868214869",
+      "source": "../cookbooks/vandelay-postgres",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
@@ -34,29 +34,7 @@
         ]
       },
       "source_options": {
-        "path": "../cookbooks/vandelay-httpd"
-      }
-    },
-    "httpd": {
-      "version": "0.3.4",
-      "identifier": "a87124598380be4e1cba5ed5eb407156f80d15d9",
-      "dotted_decimal_identifier": "47412197021941950.21986634964003648.124618342733273",
-      "cache_key": "httpd-0.3.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/httpd/versions/0.3.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/httpd/versions/0.3.4/download",
-        "version": "0.3.4"
-      }
-    },
-    "compat_resource": {
-      "version": "12.7.3",
-      "identifier": "c23f509abbc40b6f466e8a23d6b0b23d21e2176d",
-      "dotted_decimal_identifier": "54675760907797515.31321162992834224.195975631214445",
-      "cache_key": "compat_resource-12.7.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.7.3/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.7.3/download",
-        "version": "12.7.3"
+        "path": "../cookbooks/vandelay-postgres"
       }
     },
     "cron": {
@@ -117,16 +95,8 @@
         "= 4.3.3"
       ],
       [
-        "vandelay-httpd",
+        "vandelay-postgres",
         "= 0.0.0"
-      ],
-      [
-        "httpd",
-        "= 0.3.4"
-      ],
-      [
-        "compat_resource",
-        "= 12.7.3"
       ],
       [
         "cron",
@@ -160,21 +130,6 @@
           ">= 1.39.0"
         ]
       ],
-      "vandelay-httpd (0.0.0)": [
-        [
-          "httpd",
-          ">= 0.0.0"
-        ]
-      ],
-      "httpd (0.3.4)": [
-        [
-          "compat_resource",
-          ">= 12.5.11"
-        ]
-      ],
-      "compat_resource (12.7.3)": [
-
-      ],
       "cron (1.7.4)": [
 
       ],
@@ -188,6 +143,9 @@
         ]
       ],
       "chef_handler (1.3.0)": [
+
+      ],
+      "vandelay-postgres (0.0.0)": [
 
       ]
     }

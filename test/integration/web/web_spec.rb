@@ -14,22 +14,6 @@
 # limitations under the License.
 #
 
-driver:
-  name: vagrant
-
-provisioner:
-  name: policyfile_zero
-
-verifier:
-  name: inspec
-
-platforms:
-- name: centos-7.2
-
-suites:
-- name: db
-  provisioner:
-    policyfile: policies/db.rb
-- name: web
-  provisioner:
-    policyfile: policies/web.rb
+describe command('curl http://localhost') do
+  its(:stdout) { is_expected.to include '<title>Vandelay Industries</title>' }
+end
