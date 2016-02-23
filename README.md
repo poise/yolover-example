@@ -15,6 +15,13 @@ The major centerpiece of the repo are the Policyfiles.
 * [`policies/web.rb`](/policies/web.rb) – `web` policy to create an Apache web
   server.
 
+### Policy Locks
+
+Each policy has a corresponding lockfile.
+
+* [`policies/db.lock.json`](policies/db.lock.json) – Lockfile for the `db` policy.
+* [`policies/web.lock.json`](policies/web.lock.json) – Lockfile for the `web` policy.
+
 ## [Cookbooks](/cookbooks)
 
 As this is at least in part a mono-repo layout, we have an old school `cookbooks/`
@@ -24,6 +31,16 @@ folder containing our local cookbooks.
   around the [community `httpd` cookbook](https://supermarket.chef.io/cookbooks/httpd).
 * [`cookbooks/vandelay-postgres`](cookbooks/vandelay-postgres) – Local cookbook
   to install PostgeSQL because we didn't want to use any of the community ones.
+
+## [InSpec Tests](/test/integration)
+
+To verify that our policies are correct, we use [InSpec
+tests](https://github.com/chef/inspec).
+
+* [`test/integration/db/db_spec.rb`](test/integration/db/db_spec.rb) – Tests
+  for the `db` policy. Uses `psql` to confirm the database is operational.
+* [`test/integration/web/web_spec.rb`](test/integration/web/web_spec.rb) – Tests
+  for the `web` policy. Uses `curl` to confirm the content of index page.
 
 ## Other Files
 
