@@ -2,6 +2,10 @@ sudo: required
 dist: trusty
 language: generic
 
+env:
+  global:
+    KITCHEN_LOCAL_YAML: .kitchen.travis.yml
+
 install:
 - sudo add-apt-repository multiverse -y
 - sudo apt-get update -qq
