@@ -29,7 +29,6 @@ folder containing our local cookbooks.
 
 * [`.kitchen.yml`](.kitchen.yml) – [Test Kitchen](https://kitchen.ci/)
   configuration for integration tests of the policies.
-* [`.travis.yml`](.travis.yml) – [Travis-CI](https://travis-ci.org/) configuration.
 
 ## Sponsors
 
