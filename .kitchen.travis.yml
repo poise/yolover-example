@@ -20,3 +20,4 @@ driver:
     cpus: 1
     memory: 256
     ioapic: "on"
+    nic1: bridged
