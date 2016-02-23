@@ -10,10 +10,12 @@ This Chef repository will deploy Apache and PostgreSQL for a hypothetical
 The major centerpiece of the repo are the Policyfiles.
 
 * [`policies/_base.rb`](/policies/_base.rb) – Shared base policy for all servers.
+  This applies the `chef-client` recipe to all nodes and sets the default sources
+  used for all policies.
 * [`polices/db.rb`](/policies/db.rb) – `db` policy to create a Postgres database
-  server.
+  server. This applies the `vandelay-postgres` recipe.
 * [`policies/web.rb`](/policies/web.rb) – `web` policy to create an Apache web
-  server.
+  server. This applies the `vandelay-httpd` recipe.
 
 ### Policy Locks
 
