@@ -11,6 +11,9 @@ env:
 
 install:
 - curl https://chef.io/chef/install.sh | sudo bash -s -- -P chefdk
-- chef gem install test-kitchen
+- chef gem install kitchen-docker test-kitchen
 
-script: kitchen test -d always
+script:
+- docker version
+- kitchen --version
+- kitchen test -d always
