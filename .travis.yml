@@ -11,8 +11,7 @@ env:
 
 install:
 - curl https://chef.io/chef/install.sh | sudo bash -s -- -P chefdk
-- chef gem install kitchen-docker test-kitchen appbundle-updater
-- sudo chef exec appbundle-updater chefdk test-kitchen v1.6.0
+- chef gem install kitchen-docker
 
 script:
 - docker version

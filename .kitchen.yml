@@ -19,7 +19,7 @@ driver:
   privileged: true
 
 provisioner:
-  name: policyfile_zero
+  name: chef_zero
 
 verifier:
   name: inspec
