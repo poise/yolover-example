@@ -1,5 +1,5 @@
 {
-  "revision_id": "b2eacfdb7edcce4c6391890324858546e7bcccc565c3aa5ba984913f5809cb6e",
+  "revision_id": "9e2938920a42b9b4a02b54fd81cb3eae13dc295fd155fe1d22d6de95a07c63dd",
   "name": "db",
   "run_list": [
     "recipe[chef-client::default]",
@@ -7,14 +7,69 @@
   ],
   "cookbook_locks": {
     "chef-client": {
-      "version": "4.3.3",
-      "identifier": "969523b9a3a284813c827371cbd28296d077ab6f",
-      "dotted_decimal_identifier": "42385227177501316.36376802975927250.143584254208879",
-      "cache_key": "chef-client-4.3.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.3.3/download",
+      "version": "5.0.0",
+      "identifier": "f1286739cecdd3b4d119757daf2bbc3a7738bfa0",
+      "dotted_decimal_identifier": "67879893203865043.50895403083476779.206959294332832",
+      "cache_key": "chef-client-5.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/5.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.3.3/download",
-        "version": "4.3.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/5.0.0/download",
+        "version": "5.0.0"
+      }
+    },
+    "cron": {
+      "version": "1.7.6",
+      "identifier": "63662701c57f530f2c3dedd78e3bd7d63cc06fa0",
+      "dotted_decimal_identifier": "27978340413833043.4270769145613883.237315142217632",
+      "cache_key": "cron-1.7.6-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.6/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.6/download",
+        "version": "1.7.6"
+      }
+    },
+    "logrotate": {
+      "version": "2.1.0",
+      "identifier": "44e1eed59ca6edd3b261f4015366fc4384f4f362",
+      "dotted_decimal_identifier": "19388714318604013.59587353861247846.277366923653986",
+      "cache_key": "logrotate-2.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.1.0/download",
+        "version": "2.1.0"
+      }
+    },
+    "compat_resource": {
+      "version": "12.10.7",
+      "identifier": "0cf5d376444495035f02b8cb1acf2b3e5a0a51e5",
+      "dotted_decimal_identifier": "3647988291617941.948890225023695.47546798592485",
+      "cache_key": "compat_resource-12.10.7-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
+        "version": "12.10.7"
+      }
+    },
+    "windows": {
+      "version": "1.44.3",
+      "identifier": "856961abed6d3eb7083b1dd1d71bdd130a809576",
+      "dotted_decimal_identifier": "37552040119725374.51518970734434075.243073850316150",
+      "cache_key": "windows-1.44.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+        "version": "1.44.3"
+      }
+    },
+    "chef_handler": {
+      "version": "1.4.0",
+      "identifier": "aa794c0c3a03d09a5e22ca2ffb70115fda923471",
+      "dotted_decimal_identifier": "47984113570415568.43450649927482224.19103386580081",
+      "cache_key": "chef_handler-1.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+        "version": "1.4.0"
       }
     },
     "vandelay-postgres": {
@@ -26,7 +81,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:poise/yolover-example.git",
-        "revision": "c43412e5bd4a361319c7b10113fcfa0cf88d8055",
+        "revision": "56d0743a8a09a7d7681938d7257a609dbcb711c1",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -35,50 +90,6 @@
       },
       "source_options": {
         "path": "../cookbooks/vandelay-postgres"
-      }
-    },
-    "cron": {
-      "version": "1.7.4",
-      "identifier": "d8f52533be93490ea2449abbd32e5939d4827764",
-      "dotted_decimal_identifier": "61068135100224329.4119065211425582.98104913327972",
-      "cache_key": "cron-1.7.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/1.7.4/download",
-        "version": "1.7.4"
-      }
-    },
-    "logrotate": {
-      "version": "1.9.2",
-      "identifier": "f5a688be24dde794714133d5810a5fc23d4b02a9",
-      "dotted_decimal_identifier": "69144475529960935.41782821409620234.105287856620201",
-      "cache_key": "logrotate-1.9.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/1.9.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/1.9.2/download",
-        "version": "1.9.2"
-      }
-    },
-    "windows": {
-      "version": "1.39.1",
-      "identifier": "0e98019b84499c168f6990c485c03a3dde825ec4",
-      "dotted_decimal_identifier": "4107782345476508.6350133050770880.64037400501956",
-      "cache_key": "windows-1.39.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
-        "version": "1.39.1"
-      }
-    },
-    "chef_handler": {
-      "version": "1.3.0",
-      "identifier": "e43505a45df303a94934a1d3eb4cf0709d172554",
-      "dotted_decimal_identifier": "64234593038758659.47649761466248012.264366462543188",
-      "cache_key": "chef_handler-1.3.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.3.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.3.0/download",
-        "version": "1.3.0"
       }
     }
   },
@@ -92,60 +103,70 @@
     "Policyfile": [
       [
         "chef-client",
-        "= 4.3.3"
+        "= 5.0.0"
+      ],
+      [
+        "cron",
+        "= 1.7.6"
+      ],
+      [
+        "logrotate",
+        "= 2.1.0"
+      ],
+      [
+        "compat_resource",
+        "= 12.10.7"
+      ],
+      [
+        "windows",
+        "= 1.44.3"
+      ],
+      [
+        "chef_handler",
+        "= 1.4.0"
       ],
       [
         "vandelay-postgres",
         "= 0.0.0"
-      ],
-      [
-        "cron",
-        "= 1.7.4"
-      ],
-      [
-        "logrotate",
-        "= 1.9.2"
-      ],
-      [
-        "windows",
-        "= 1.39.1"
-      ],
-      [
-        "chef_handler",
-        "= 1.3.0"
       ]
     ],
     "dependencies": {
-      "chef-client (4.3.3)": [
+      "chef-client (5.0.0)": [
         [
           "cron",
-          ">= 1.2.0"
+          ">= 1.7.0"
         ],
         [
           "logrotate",
-          ">= 1.2.0"
+          ">= 1.9.0"
         ],
         [
           "windows",
-          ">= 1.39.0"
+          ">= 1.42.0"
         ]
       ],
-      "vandelay-postgres (0.0.0)": [
+      "cron (1.7.6)": [
 
       ],
-      "cron (1.7.4)": [
+      "logrotate (2.1.0)": [
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ]
+      ],
+      "compat_resource (12.10.7)": [
 
       ],
-      "logrotate (1.9.2)": [
-
-      ],
-      "windows (1.39.1)": [
+      "windows (1.44.3)": [
         [
           "chef_handler",
           ">= 0.0.0"
         ]
       ],
-      "chef_handler (1.3.0)": [
+      "chef_handler (1.4.0)": [
+
+      ],
+      "vandelay-postgres (0.0.0)": [
 
       ]
     }
