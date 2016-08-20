@@ -16,4 +16,5 @@ install:
 script:
 - docker version
 - kitchen --version
+- for policy in policies/*.rb; do chef install $policy; done
 - kitchen test -d always
