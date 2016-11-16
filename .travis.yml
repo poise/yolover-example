@@ -5,10 +5,6 @@ language: generic
 services:
 - docker
 
-env:
-  global:
-    KITCHEN_LOCAL_YAML: .kitchen.travis.yml
-
 install:
 - curl https://www.chef.io/chef/install.sh | sudo bash -s -- -P chefdk
 - chef gem install kitchen-docker
