@@ -10,6 +10,7 @@ install:
 - chef gem install kitchen-docker
 
 script:
+- chef --version
 - docker version
 - kitchen --version
 - for policy in policies/*.rb; do chef install $policy; done
